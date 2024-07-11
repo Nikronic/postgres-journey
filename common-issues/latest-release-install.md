@@ -11,8 +11,24 @@ sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 
 After this, just do the normal `apt install postgresql`
 
->[!note]
->No need to uninstall Debian LTS version
+>[!warning]
+>You need to remove the LTS version, i.e., the preinstalled postgresql server.
+
+To remove the LTS version (old version):
+1. Purge the default one: `apt purge postgresql-15`
+2. Remove unnecessary packages (`postgresql-client-15`) affected by the purge: `apt autoremove`
+3. Install the latest: `apt install postgresql`
+
+>[!danger]
+>Purging the previous installation will cause the removal of all databases (unless prompted). Although there will a prompt to make sure you are aware of your actions.
+
+>[!info] Test version of client and server
+>To test,
+>1. just use `psql -V` to check client version, then to test server, 
+>2. create a db and log into it: `createdb testdb`, and `psql testdb`
+>3. run the following command when connected to `testdb`: `select version();`
+>
+>![[Pasted image 20240711152313.png]]
 
 [^1]: PostgreSQL is available in all Debian versions by default. However, Debian "snapshots" a specific version of PostgreSQL that is then supported throughout the lifetime of that Debian version.
 [^2]: https://www.postgresql.org/download/linux/debian/
