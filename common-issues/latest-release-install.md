@@ -14,7 +14,7 @@ After this, just do the normal `apt install postgresql`
 >[!warning]
 >You need to remove the LTS version, i.e., the preinstalled postgresql server.
 
-To remove the LTS version (old version):
+To remove the LTS version (old version)[^3]:
 1. Purge the default one: `apt purge postgresql-15`
 2. Remove unnecessary packages (`postgresql-client-15`) affected by the purge: `apt autoremove`
 3. Install the latest: `apt install postgresql`
@@ -32,3 +32,4 @@ To remove the LTS version (old version):
 
 [^1]: PostgreSQL is available in all Debian versions by default. However, Debian "snapshots" a specific version of PostgreSQL that is then supported throughout the lifetime of that Debian version.
 [^2]: https://www.postgresql.org/download/linux/debian/
+[^3]: https://medium.com/@gembit.soultan/how-to-upgrade-postgresql-15-to-postgresql-16-using-pg-upgradeclusters-in-ubuntu-22-04-c9f279c5d3ab
