@@ -33,6 +33,9 @@ REFERENCES Airplane(AirplaneId)
 );
 >```
 
+TODO:
+- [ ] Read more on the cardinality particularly many-to-many
+- [ ] Learn the best practices of designing a good database by utilizing foreign key and keeping the relations between tables meaningful and well designed.
 
 [^1]: https://stackoverflow.com/a/5493818/7606121
 [^2]: https://stackoverflow.com/a/5493822/7606121
