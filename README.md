@@ -1,23 +1,14 @@
-# obsidian-base
-A template repository for Obsidian based repos.
+# PosrtgreSQL Journey
 
-## Rules
-For structure of the Obsidian repo, one should follow these rules:
-- If repo is **attachment heavy**, each directory should have a separate attachment folder:
-```shell
-.
-├── first-dir
-│   └── attachment
-└── second-dir
-    └── attachment
-```
+## Resources
+Here are the resources I use (except the main book; The Art of PosrtgreSQL) for learning the technical side and also experience for better decision making and avoiding pitfalls:
 
-- If repo is not attachment heavy or by no means the organization of attachments are useful, then:
-```shell
-.
-├── attachment
-├── first-dir
-└── second-dir
-```
-
-- Don't make a note too large (max 3-4 page), instead try to break down the concepts into smaller notes, but with stronger graph relations (it is a knowledge base).
+| Name                                                         | Description                                                                                                           | Score (1-3) |
+| ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [LearnSQL](https://learnsql.com)                             | Technical topics with examples (all concepts)                                                                         | 3           |
+| Reddit                                                       | Experiences of designs, success or failures.                                                                          | 3           |
+| [Microsoft Learn](https://learn.microsoft.com)               | Technical topics with best practices and examples (all concepts), but too much advertisement and focus on MS products | 1           |
+| [PosrtgreSQL Official Documentation](https://postgresql.org) | PosrtgreSQL documentation, focusing on technical details, best practices and some examples                            | 3           |
+| [Use The Index Luke](https://use-the-index-luke.com/)        | Technical details, examples and best practices of tuning the SQL via indexing                                         | 3           |
+| [Modern SQL](https://modern-sql.com/)                        | Focused on main SQL features, presentations and seminars                                                              | ?           |
+| [Dimitri Fontaine Personal Website](https://tapoueh.org/)    | Blog posts on utilizing PosrtgreSQL in the best way                                                                   | 3           |
