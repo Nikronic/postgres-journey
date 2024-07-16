@@ -304,3 +304,8 @@ TSWLatexianTemp*
 .obsidian/workspace.json
 .obsidian/hotkeys.json
 .obsidian/appearance.json
+
+# postgres source code (used for building tutorials)
+postgresql-16.3/
+postgresql-16.3.tar.gz
+
